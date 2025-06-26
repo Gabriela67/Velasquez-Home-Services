@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Velasquez Home Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-o8UwYXZk6Xn9aXL3LELDGf9DJmjYx6+VX/jgk9CPC+0=" crossorigin="" />
+    <script defer src="script.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-o8UwYXZk6Xn9aXL3LELDGf9DJmjYx6+VX/jgk9CPC+0=" crossorigin=""></script>
+
+        <!-- Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+    <header class="topbar">
+        <h1 class="logo">Velasquez Home Services</h1>
+        <nav class="navbar">
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+            <a href="#services"><i class="fas fa-tools"></i> Services</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="#map"><i class="fas fa-map-marker-alt"></i> Service Area</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="section hero-section">
+            <div class="hero">
+                <h2>Your Trusted Partner for Home Services</h2>
+                <p>Reliable, professional, and high-quality work in Washington, Maryland, and Virginia.</p>
+                <a class="btn primary" href="#contact">Get a Free Quote</a>
+            </div>
+        </section>
+
+        <section id="services" class="section fade-in">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="img/1.jpg" alt="Plumbing" />
+                    <div class="card-content">
+                        <h3>Electricity</h3>
+                    </div>
+                </div>                  
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/2.png" alt="Plumbing" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Plumbing</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/3.png" alt="Carpentry" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Carpentry</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/5.jpg" alt="Wood Floors" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Wood Floors</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/6.jpeg" alt="Ceramic" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Ceramic</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/7.jpg" alt="Pressure Washing" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Pressure Washing</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/8.jpg" alt="Painting" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Painting</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/9.jpg" alt="Drywall" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Drywall</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/10.jpg" alt="Framing" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Framing</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/11.jpg" alt="Home Cleaning" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Home Cleaning</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/12.jpg" alt="Decking" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Decking</h3>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="img-container">
+                        <img src="img/13.jpg" alt="Grass Cutting" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Grass Cutting</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial" class="testimonial-section fade-in">
+            <p>“Velasquez Home Services transformed my house! Professional, punctual, and the quality is outstanding.
+                Highly recommended!”</p>
+            <div class="testimonial-author">— Sarah M., Washington D.C.</div>
+        </section>
+
+        <section id="map" class="section fade-in">
+            <h2>Service Area Map</h2>
+            <div id="map-container"></div>
+        </section>
+
+        <section id="contact" class="section fade-in contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message..." rows="5"
+                        required></textarea>
+
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:hav1319@gmail.com">hav1319@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+12027256000">+1 (202) 725-6000</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/12027256000" target="_blank">Chat on
+                            WhatsApp</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/12027256000" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+
+</html>
