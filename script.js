@@ -64,5 +64,49 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Thank you for your message! We'll get back to you soon.");
       contactForm.reset();
     });
+});
+const servicesInfo = {
+    "Electricity": "We offer residential and commercial electrical installation, repair, and maintenance services with licensed professionals.",
+    "Plumbing": "Expert plumbing services including leak repair, pipe installation, and water heater solutions.",
+    "Carpentry": "Custom woodwork, framing, cabinetry, doors, and more with precision and care.",
+    "Wood Floors": "Professional hardwood and laminate floor installation, refinishing and repairs.",
+    "Ceramic": "Ceramic tile installation for kitchens, bathrooms, floors, and walls with perfect finishing.",
+    "Pressure Washing": "Power washing services for patios, driveways, siding, and more to leave surfaces spotless.",
+    "Painting": "Interior and exterior painting with attention to detail and long-lasting finishes.",
+    "Drywall": "Drywall installation, patching, taping, and finishing for all types of spaces.",
+    "Framing": "Structural and decorative framing work for residential and light commercial projects.",
+    "Home Cleaning": "Thorough home cleaning services to keep your space fresh and spotless.",
+    "Decking": "Build and restore wooden decks with durable materials and stylish design.",
+    "Grass Cutting": "Lawn care and grass cutting services to keep your garden looking clean and green."
+  };
+  
+  // Modal elements
+  const modal = document.createElement("div");
+  modal.classList.add("modal-overlay");
+  modal.innerHTML = `
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h3></h3>
+      <p></p>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  
+  const modalTitle = modal.querySelector("h3");
+  const modalDesc = modal.querySelector("p");
+  const modalClose = modal.querySelector(".modal-close");
+  
+  modalClose.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+  
+  // Show modal when clicking a service card
+  document.querySelectorAll(".service-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const title = card.querySelector("h3").textContent;
+      modalTitle.textContent = title;
+      modalDesc.textContent = servicesInfo[title] || "More information coming soon.";
+      modal.classList.add("active");
+    });
   });
   
