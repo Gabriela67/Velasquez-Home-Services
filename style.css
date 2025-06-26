@@ -42,11 +42,7 @@ a {
     font-size: 1rem;
     transition: color 0.3s ease;
 }
-.navbar {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
+
 
 .toggle-dark-mode {
     background: none;
@@ -517,5 +513,100 @@ body.dark .testimonial-section {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .sidebar ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .about p {
+        font-size: 0.95rem;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        font-size: 1rem;
+    }
+
+    .contact p {
+        font-size: 0.95rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
     }
 }
