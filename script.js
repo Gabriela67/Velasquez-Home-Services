@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.createElement("button");
     toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
     toggleBtn.classList.add("toggle-dark-mode");
-    document.body.appendChild(toggleBtn);
+    document.querySelector(".navbar").appendChild(toggleBtn); 
   
     toggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark");

@@ -42,7 +42,32 @@ a {
     font-size: 1rem;
     transition: color 0.3s ease;
 }
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
+.toggle-dark-mode {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #1e293b;
+    /* azul oscuro */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.toggle-dark-mode:hover {
+    transform: scale(1.2);
+    color: #6366f1;
+    /* azul bonito al pasar el mouse */
+}
+
+/* En modo oscuro, cambia el color */
+body.dark .toggle-dark-mode {
+    color: #facc15;
+}
 .navbar a:hover {
     color: #38bdf8;
 }
@@ -65,7 +90,24 @@ h2 {
     text-align: center;
     margin-bottom: 2rem;
 }
+.toggle-dark-mode {
+    background: transparent;
+    color: #1e293b;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
 
+.toggle-dark-mode:hover {
+    transform: scale(1.2);
+    color: #6366f1;
+}
+
+body.dark .toggle-dark-mode {
+    color: #facc15;
+}
 /* Hero */
 .hero-section {
     background: linear-gradient(135deg, #0ea5e9, #38bdf8);
