@@ -59,6 +59,45 @@ a {
     color: #6366f1;
     /* azul bonito al pasar el mouse */
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+.hero-logo {
+    max-width: 170px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* En modo oscuro, cambia el color */
 body.dark .toggle-dark-mode {
@@ -80,11 +119,17 @@ h2 {
     color: #0ea5e9;
 }
 
+
 /* Special style for Our Services title */
 #services>h2 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+}
+.titulo{
+    font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;   
 }
 .toggle-dark-mode {
     background: transparent;
@@ -385,6 +430,7 @@ body.dark .toggle-dark-mode {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 /* WhatsApp floating button */
 .whatsapp-float {

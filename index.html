@@ -26,36 +26,42 @@
 
 <body>
     <header class="topbar">
-        <h1 class="logo">Velasquez Home Services</h1>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Velasquez Logo" class="logo-img">
+            <h1 class="logo-text">Velasquez Home Services</h1>
+        </div>
         <nav class="navbar">
             <a href="#home"><i class="fas fa-home"></i> Home</a>
-            <a href="#about"><i class="fas fa-person"></i> about</a>
+            <a href="#about"><i class="fas fa-person"></i> About</a>
             <a href="#services"><i class="fas fa-tools"></i> Services</a>
             <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
             <a href="#map"><i class="fas fa-map-marker-alt"></i> Service Area</a>
         </nav>
-    </header>
-
+    </header>    
     <main class="main-content">
         <section id="home" class="section hero-section">
             <div class="hero">
+                <img src="img/logo.png" alt="Velasquez Logo" class="hero-logo">
                 <h2 id="h1t">Your Trusted Partner for Home Services</h2>
                 <p>Reliable, professional, and high-quality work in Washington, Maryland, and Virginia.</p>
                 <a class="btn primary" href="#contact">Get a Free Quote</a>
             </div>
         </section>
+        
         <section id="about" class="about fade-in">
             <h2 class="en">About Me</h2>
             <p class="en">
-                Hello, my name is Hector Velásquez. I’m a proud Salvadoran, and I’ve been working in the handyman business since the
-                year 2000. With over 24 years of experience, I’ve had the honor of serving homeowners and businesses across
-                Washington D.C., Maryland, and Virginia and beyond.<br /><br />
-                I lead a hardworking team, and together we take pride in delivering high-quality results — from electrical work
-                and plumbing to painting, cleaning, remodeling, and more. I love every part of what I do. Whether it's a small
-                repair or a big project, I always give it my all.<br /><br />
-                My clients often come through referrals, because I believe that honesty, punctuality, and attention to detail
-                are what make the difference. I started this journey with just my hands and a dream, and today, Velásquez Home
-                Services is a reflection of my dedication and passion to help families improve their homes.
+                Hello, my name is Hector Velásquez. I’ve been working in the handyman business since the year 2000. With over 24 years
+                of experience, I’ve had the honor of serving homeowners and businesses across Washington D.C., Maryland, and Virginia
+                and beyond.
+                
+                I lead a hardworking team, and together we take pride in delivering high-quality results — from electrical work and
+                plumbing to painting, cleaning, remodeling, and more. I love every part of what I do. Whether it's a small repair or a
+                big project, I always give it my all.
+                
+                My clients often come through referrals, because I believe that honesty, punctuality, and attention to detail are what
+                make the difference. I started this journey with just my hands and a dream, and today, Velásquez Home Services is a
+                reflection of my dedication and passion to help families improve their homes.
             </p>
             </section>
 
@@ -158,6 +164,7 @@
                 </div>
             </div>
         </section>
+        <h2 class="titulo">recommendations</h2>
 
         <section id="testimonial" class="testimonial-section fade-in">
             <p>“Velasquez Home Services transformed my house! Professional, punctual, and the quality is outstanding.
@@ -166,52 +173,54 @@
         </section>
 
         <section id="map" class="section fade-in">
-            <h2>Service Area Map</h2>
+            <h2 class="titulo">Service Area Map</h2>
             <div id="map-container"></div>
         </section>
 
-        <section id="contact" class="section fade-in contact-section">
-            <h2>Contact Us</h2>
-            <div class="contact-container">
-                <form class="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required />
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="you@example.com" required />
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write your message..." rows="5"
-                        required></textarea>
-
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
-
-                <div class="contact-info">
-                    <div class="contact-box">
-                        <i class="fas fa-envelope contact-icon"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:hav1319@gmail.com">hav1319@gmail.com</a>
-                        </div>
+        <h2 class="titulo">Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+        
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        
+            <div class="contact-info">
+                <div class="contact-box">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:hav1319@gmail.com">hav1319@gmail.com</a>
                     </div>
-                    <div class="contact-box">
-                        <i class="fas fa-phone contact-icon"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <a href="tel:+12027256000">+1 (202) 725-6000</a>
-                        </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <a href="tel:+12027256000">+1 (202) 725-6000</a>
                     </div>
-                    <div class="contact-box">
-                        <i class="fab fa-whatsapp contact-icon"></i>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <a href="https://wa.me/12027256000" target="_blank">Chat on WhatsApp</a>
-                        </div>
+                </div>
+                <div class="contact-box">
+                    <i class="fab fa-whatsapp contact-icon"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/12027256000" target="_blank">Chat on WhatsApp</a>
                     </div>
-                </div>                  
+                </div>
+            
+            
             </div>
+            
+        </div>
         </section>
+        
     </main>
 
     <!-- WhatsApp floating button -->
