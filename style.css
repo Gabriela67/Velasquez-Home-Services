@@ -632,6 +632,16 @@ body.dark .testimonial-section {
         text-align: center;
         padding: 1rem;
     }
+        .contact-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .contact-form,
+        .contact-info {
+            width: 100%;
+            max-width: 500px;
+        }
 }
 
 @media (max-width: 480px) {
